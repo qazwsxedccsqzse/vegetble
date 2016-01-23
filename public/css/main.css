@@ -1,0 +1,107 @@
+body {
+	padding: 0px !important;
+	margin: 0px !important;
+	font-size: 16px;
+	font-family: "微軟正黑體", sans-serif;
+}
+.store-logo {
+	width: 50%;
+	float: right;
+}
+.function-bar {
+	padding: 5px;
+}
+.function-bar a {
+	text-decoration: none;
+	cursor: pointer;
+	color: #008800;
+}
+.header:after{
+	margin-top: 10px;
+	content: " ";
+	border-bottom: 1px solid #88AA00;
+	display: block;
+}
+.badge {
+	background-color: #008844;
+	color: #FFF;
+}
+.tab-2 {
+	background-color: #88AA00;
+	color: #FFF;
+	text-align: center;
+	border-radius: 5px;
+	margin: 0 auto;
+	padding: 10px;
+	-webkit-transition: background-color .5s;
+    -moz-transition: background-color .5s;
+    -o-transition: background-color .5s;
+    transition: background-color .5s;
+}
+.tab-2:hover {
+	background-color: #55AA00;
+}
+.category {
+	margin-top: 10px;
+}
+
+
+.margin-top-10 {
+	margin-top: 10px;
+}
+.margin-top-20 {
+	margin-top: 20px;
+}
+
+.margin-bottom-10 {
+	margin-bottom: 10px;
+}
+.padding-x-1 {
+	padding-left: 1px;
+	padding-right: 1px;
+	margin-bottom: 1px;
+}
+.arrow-center {
+	position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+    margin: -15px 0 0 0;
+}
+.footer {
+	padding: 20px;
+	margin-top: 20px;
+	background-color: #88AA71;
+	font-family: "微軟正黑體";
+	color: #fff;
+}
+.footer-logo {
+	width: 100%;
+}
+.store-desc h2 {
+	margin-top: 10px;
+	font-size: 16px;
+}
+.store-contact {
+	text-align: center;
+}
+.store-contact h4 {
+	font-weight: bold;
+}
+.frame {
+	text-align: center;
+}
+.frame .item {
+	padding: 0px 2px;
+	border-right: 1px solid #eee;
+	margin-top: 10px;
+}
+.frame .item a {
+	text-decoration: none !important;
+	color: #fff;
+}
+#search_button {
+	border-radius: 0px;
+	background-color: #55AA00;
+	color: #FFF;
+}

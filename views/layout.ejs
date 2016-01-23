@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title><%= title%></title>
+    <% if(typeof(meta) !== 'undefined'){ %>
+    <meta name="description" content="<%= meta.description %>">
+    <meta name="keywords" content="<%= meta.keywords %>">
+    <meta property="og:site_name" content="<%= meta.siteName %>">
+    <meta property="og:title" content="<%= title %>">
+    <meta property="og:description" content="<%= meta.description %>">
+    <<meta property="og:image" content="<%= meta.imageUrl %>">
+    <meta property="og:url" content="<%= meta.currentUrl %>">
+    <% } %>
+    <meta property="og:type" content="website">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/plugin/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="/plugin/css/bootstrap-social.css" rel="stylesheet" type="text/css">
+    <link href="/css/main.css"  rel="stylesheet" type="text/css">
+    <% if(typeof(extra_links) !== 'undefined'){ %>
+      <% for(var index in extra_links){ %>
+        <% var link = extra_links[index].split('.'); 
+           var ext = link[1];
+           switch(ext){
+             case "css": %>
+               <link href="<%= extra_links[index]%>" ref="stylesheet" type="text/css">
+              <% break; %>
+             <% case "js": %>
+               <script src="<%= extra_links[index]%>" type="text/javascript"></script>
+              <% break; %>
+        <%  }
+        %>
+      <% } %>
+    <% } %>
+  </head>
+  <body>
+    <!-- header begin -->
+    <%-partial('partials/header')%>
+    <!-- header end   -->
+    <div class="container">
+      <%- body %>
+    </div> 
+    <!-- footer -->
+    <%-partial('partials/footer')%>
+  </body>
+</html>
